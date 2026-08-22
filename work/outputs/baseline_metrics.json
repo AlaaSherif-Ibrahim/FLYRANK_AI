@@ -1,0 +1,21 @@
+{
+  "lane": "2_refresh_scoring",
+  "slice": "data/raw/content_refresh_anonymized.csv (30k pages)",
+  "label": "is_declining_label",
+  "rule_inputs": [
+    "avg_position",
+    "impressions_90d",
+    "ctr",
+    "search_volume"
+  ],
+  "thresholds": {
+    "position": "(0, 10]",
+    "impressions_90d": ">=500",
+    "ctr": "<=0.15"
+  },
+  "pool_n": 2532,
+  "pool_rate": 0.699,
+  "p_at_50": 0.7,
+  "p_at_100": 0.67,
+  "base_rate": 0.542
+}
